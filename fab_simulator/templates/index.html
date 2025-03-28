@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fab Simulator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fab Simulator Dashboard</h1>
+        <button id="startMaterialBtn">Start Material</button>
+    </header>
+    <main>
+        <!-- Left Sidebar: Stocker Panel -->
+        <div id="stocker">
+            <!-- New lot IDs will be appended here -->
+        </div>
+        <!-- Center: FAB Zone -->
+        <div id="fab-zone-container">
+            <div id="fabZone-header">
+                <h2>FAB ZONE</h2>
+                <select id="sectionGroupSelect">
+                    <option value="all">All Sections</option>
+                    <option value="WET-CLEAN">WET-CLEAN</option>
+                    <option value="DRY-ETCH">DRY-ETCH</option>
+                    <option value="WET-ETCH">WET-ETCH</option>
+                    <option value="THIN-FILM">THIN-FILM</option>
+                    <option value="PHOTO">PHOTO</option>
+                    <option value="CMP">CMP</option>
+                    <option value="IMPLANT">IMPLANT</option>
+                    <option value="DIFFUSION">DIFFUSION</option>
+                    <option value="DEVELOP">DEVELOP</option>
+                    <option value="YIELD">YIELD</option>
+                    <option value="METROLOGY">METROLOGY</option>
+                    <option value="INSPECTION">INSPECTION</option>
+                    <option value="TEST">TEST</option>
+                    <option value="PACKAGING">PACKAGING</option>
+                    <option value="R&D">R&D</option>
+                </select>
+            </div>
+            <div id="fabZone">
+                <!-- Tools and chambers will be dynamically loaded here -->
+            </div>
+        </div>
+        <!-- Right Sidebar: Lot Details -->
+        <aside id="lotDetails">
+            <h3>Lot Details</h3>
+            <div id="lotDetailsContent">
+                <!-- Lot details will be shown here when a lot is clicked -->
+            </div>
+        </aside>
+    </main>
+    <script src="/static/main.js"></script>
+</body>
+</html>
